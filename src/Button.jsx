@@ -4,13 +4,13 @@ export const Button = ({
   variant = 'primary',
   style: customStyle = {},
 }) => {
-  const variants = {
+  const allBtnTypes = {
     primary: { bg: '#2563eb', hover: '#1d4ed8', active: '#1e40af', color: '#fff' },
     secondary: { bg: '#6b7280', hover: '#4b5563', active: '#374151', color: '#fff' },
     danger: { bg: '#dc2626', hover: '#b91c1c', active: '#991b1b', color: '#fff' },
   };
 
-  const colors = variants[variant] || variants.primary;
+  const colors = allBtnTypes[variant] || allBtnTypes.primary;
 
   return (
     <div

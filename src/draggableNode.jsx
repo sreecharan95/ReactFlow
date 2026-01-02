@@ -1,5 +1,3 @@
-// draggableNode.js
-
 export const DraggableNode = ({ type, label }) => {
     const onDragStart = (event, nodeType) => {
       const appData = { nodeType }
@@ -15,8 +13,8 @@ export const DraggableNode = ({ type, label }) => {
         onDragEnd={(event) => (event.target.style.cursor = 'grab')}
         style={{ 
           cursor: 'grab', 
-          minWidth: '80px', 
-          height: '60px',
+          minWidth: '100px', 
+          height: '40px',
           display: 'flex', 
           alignItems: 'center', 
           borderRadius: '8px',
